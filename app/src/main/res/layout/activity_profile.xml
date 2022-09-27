@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Application.profileActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_53hsdp"
+        android:background="@drawable/back_rounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginBottom="@dimen/_1hsdp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Update Account"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150hsdp"
+        android:background="@drawable/back2_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10hsdp"
+        android:layout_marginRight="@dimen/_10hsdp"
+        app:cardCornerRadius="@dimen/_10hsdp"
+        app:cardElevation="8dp"
+        android:layout_marginTop="@dimen/_100hsdp"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_7hsdp"
+                    android:layout_marginTop="@dimen/_7hsdp"
+                    android:layout_marginRight="@dimen/_7hsdp"
+                    android:layout_marginBottom="@dimen/_7hsdp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_100hsdp"
+                        android:layout_height="@dimen/_100hsdp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="@dimen/_100hsdp"
+                        app:cardElevation="5dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/userProfileRegister"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+
+                            android:src="@drawable/profile" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/userNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5hsdp"
+                        android:layout_marginBottom="@dimen/_5hsdp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="What's your name?"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/userNameEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7hsdp"
+                        android:layout_marginTop="@dimen/_7hsdp"
+                        android:layout_marginRight="@dimen/_7hsdp"
+                        android:layout_marginBottom="@dimen/_7hsdp"
+                        android:background="@drawable/edt"
+                        android:fontFamily="serif"
+                        android:hint="Name"
+                        android:padding="8dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/registersumbitButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_31hsdp"
+                        android:layout_margin="@dimen/_8hsdp"
+                        android:background="@drawable/btn_like"
+                        android:fontFamily="serif"
+                        android:text="Update"
+                        android:textColor="#FBFBFB"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5hsdp"
+                        android:layout_marginBottom="@dimen/_5hsdp"
+                        android:fontFamily="serif"
+                        android:gravity="left"
+                        android:layout_marginStart="@dimen/_10hsdp"
+                        android:text="Use this key to login Our users"
+                        android:textColor="#676767"
+                        android:textSize="19sp" />
+                    <TextView
+                        android:id="@+id/myAuthId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5hsdp"
+                        android:layout_marginBottom="@dimen/_5hsdp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:scrollHorizontally="true"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+
+                        android:layout_marginStart="@dimen/_10hsdp"
+                        android:text="Use this key to login Our users"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+                    <TextView
+                        android:id="@+id/tap_to_copy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5hsdp"
+                        android:layout_marginBottom="@dimen/_5hsdp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:layout_marginStart="@dimen/_10hsdp"
+                        android:text="Tap to copy"
+                        android:textStyle="italic"
+                        android:textColor="#676767"
+                        android:textSize="19sp" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

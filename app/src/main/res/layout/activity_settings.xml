@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Settings.SettingsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="9dp">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45hsdp"
+            android:elevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/userName_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_7hsdp"
+                        android:gravity="center_vertical"
+
+                        android:text="Settings"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </Toolbar>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_7hsdp"
+            app:cardCornerRadius="@dimen/_5hsdp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45hsdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    app:tint="#A182E8"
+                    android:id="@+id/goto_updateSliders"
+                    android:layout_width="@dimen/_20hsdp"
+                    android:layout_height="@dimen/_20hsdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/_7hsdp"
+                    android:rotation="180"
+                    android:src="@drawable/arroww" />
+
+                <TextView
+                    android:id="@+id/sliders"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_7hsdp"
+                    android:gravity="center_vertical"
+                    android:text="Sliders"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_7hsdp"
+            app:cardCornerRadius="@dimen/_5hsdp"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45hsdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    app:tint="#A182E8"
+                    android:id="@+id/goto_addVideos"
+                    android:layout_width="@dimen/_20hsdp"
+                    android:layout_height="@dimen/_20hsdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/_7hsdp"
+                    android:rotation="180"
+                    android:src="@drawable/arroww" />
+
+                <TextView
+                    android:id="@+id/video"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_7hsdp"
+                    android:gravity="center_vertical"
+                    android:text="Add Videos"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_7hsdp"
+            app:cardCornerRadius="@dimen/_5hsdp"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45hsdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    app:tint="#A182E8"
+                    android:id="@+id/goto_addPdf"
+                    android:layout_width="@dimen/_20hsdp"
+                    android:layout_height="@dimen/_20hsdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/_7hsdp"
+                    android:rotation="180"
+                    android:src="@drawable/arroww" />
+
+                <TextView
+                    android:id="@+id/pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_7hsdp"
+                    android:gravity="center_vertical"
+                    android:text="Add Pdf"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_7hsdp"
+            app:cardCornerRadius="@dimen/_5hsdp"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45hsdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    app:tint="#A182E8"
+                    android:id="@+id/goto_deletecourse"
+                    android:layout_width="@dimen/_20hsdp"
+                    android:layout_height="@dimen/_20hsdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/_7hsdp"
+                    android:rotation="180"
+                    android:src="@drawable/arroww" />
+
+                <TextView
+                    android:id="@+id/deleteCourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_7hsdp"
+                    android:gravity="center_vertical"
+                    android:text="Delete &amp; edit course"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_7hsdp"
+            app:cardCornerRadius="@dimen/_5hsdp"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45hsdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    app:tint="#A182E8"
+                    android:id="@+id/launchCourseId"
+                    android:layout_width="@dimen/_20hsdp"
+                    android:layout_height="@dimen/_20hsdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/_7hsdp"
+                    android:rotation="180"
+                    android:src="@drawable/arroww" />
+
+                <TextView
+                    android:id="@+id/launchCourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_7hsdp"
+                    android:gravity="center_vertical"
+                    android:text="Launch course"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

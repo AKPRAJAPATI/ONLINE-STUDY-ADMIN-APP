@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    android:layout_width="@dimen/_250hsdp"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/_5hsdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/sliderImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_240hsdp"
+            android:src="@drawable/pdf2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100hsdp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5hsdp"
+                android:layout_weight="1"
+                android:elevation="@dimen/_5hsdp"
+                app:cardCornerRadius="@dimen/_5hsdp"
+                app:cardElevation="@dimen/_5hsdp">
+
+                <TextView
+                    android:id="@+id/upload_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Choose Image"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5hsdp"
+                android:layout_weight="1"
+                style="@style/Theme.AppCompat.DayNight.NoActionBar"
+                android:elevation="@dimen/_5hsdp"
+                app:cardCornerRadius="@dimen/_5hsdp"
+                app:cardElevation="@dimen/_5hsdp">
+
+                <TextView
+                    android:id="@+id/cencelBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Cancel"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

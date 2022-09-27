@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_7hsdp"
+        app:cardCornerRadius="@dimen/_7hsdp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_7hsdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change pdf name"
+                android:layout_marginLeft="@dimen/_10hsdp"
+                android:textSize="@dimen/_12hsdp"/>
+
+
+            <EditText
+                android:id="@+id/pdf_nameChanged"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7hsdp"
+                android:layout_marginTop="@dimen/_7hsdp"
+                android:layout_marginRight="@dimen/_7hsdp"
+                android:layout_marginBottom="@dimen/_7hsdp"
+                android:background="@drawable/edt"
+                android:fontFamily="serif"
+                android:hint="Change pdf name"
+                android:padding="8dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/changePdfName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30hsdp"
+                android:layout_margin="@dimen/_7hsdp"
+                android:background="@drawable/btn_like"
+                android:fontFamily="serif"
+                android:text="Change Name"
+                android:textAllCaps="false"
+                android:textColor="#FBFBFB"
+                android:textSize="@dimen/_12hsdp"
+                android:textStyle="bold" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30hsdp"
+                android:layout_marginLeft="@dimen/_7hsdp"
+                android:layout_marginRight="@dimen/_7hsdp"
+                android:layout_marginBottom="@dimen/_7hsdp"
+                android:background="@drawable/btn_like"
+                android:fontFamily="serif"
+                android:text="Close Dialog"
+                android:textAllCaps="false"
+                android:textColor="#FBFBFB"
+                android:textSize="@dimen/_12hsdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

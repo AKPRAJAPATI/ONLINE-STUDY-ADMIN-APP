@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "359625712330",
+    "firebase_url": "https://mr-minded-university-35250-default-rtdb.firebaseio.com",
+    "project_id": "mr-minded-university-35250",
+    "storage_bucket": "mr-minded-university-35250.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359625712330:android:f6d530e79108b7e9f90a33",
+        "android_client_info": {
+          "package_name": "com.university.mrmindedadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359625712330-ojb8oo3rqj89me15bdpr5bf5pbftangu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBualleZuvl6Phru7QLXlM7CbLuEpm36ZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359625712330-ojb8oo3rqj89me15bdpr5bf5pbftangu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359625712330:android:26333c784aba60c1f90a33",
+        "android_client_info": {
+          "package_name": "com.university.mrmindeduniversity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359625712330-ojb8oo3rqj89me15bdpr5bf5pbftangu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBualleZuvl6Phru7QLXlM7CbLuEpm36ZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359625712330-ojb8oo3rqj89me15bdpr5bf5pbftangu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

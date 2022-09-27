@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authentication.RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_53hsdp"
+        android:background="@drawable/back_rounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginBottom="@dimen/_1hsdp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Register Account"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150hsdp"
+        android:background="@drawable/back2_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15hsdp"
+        android:layout_marginRight="@dimen/_15hsdp"
+        app:cardCornerRadius="@dimen/_12hsdp"
+        app:cardElevation="@dimen/_8hsdp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_10hsdp"
+                    android:layout_marginTop="@dimen/_10hsdp"
+                    android:layout_marginRight="@dimen/_10hsdp"
+                    android:layout_marginBottom="@dimen/_10hsdp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_100hsdp"
+                        android:layout_height="@dimen/_100hsdp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="@dimen/_100hsdp"
+                        app:cardElevation="@dimen/_5hsdp">
+
+                        <ImageView
+                            android:id="@+id/userProfileRegister"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+
+                            android:src="@drawable/profile" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/userNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5hsdp"
+                        android:layout_marginBottom="@dimen/_5hsdp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="What's your name?"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_20hsdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/userNameEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7hsdp"
+                        android:layout_marginTop="@dimen/_7hsdp"
+                        android:layout_marginRight="@dimen/_7hsdp"
+                        android:layout_marginBottom="@dimen/_7hsdp"
+                        android:background="@drawable/edt"
+                        android:fontFamily="serif"
+                        android:hint="Name"
+                        android:padding="8dp" />
+
+                    <EditText
+                        android:id="@+id/userEmailEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7hsdp"
+                        android:layout_marginTop="@dimen/_7hsdp"
+                        android:layout_marginRight="@dimen/_7hsdp"
+                        android:layout_marginBottom="@dimen/_7hsdp"
+                        android:background="@drawable/edt"
+                        android:fontFamily="serif"
+                        android:hint="Email"
+                        android:padding="8dp" />
+
+                    <EditText
+                        android:id="@+id/userPasswordEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7hsdp"
+                        android:layout_marginTop="@dimen/_7hsdp"
+                        android:layout_marginRight="@dimen/_7hsdp"
+                        android:layout_marginBottom="@dimen/_7hsdp"
+                        android:background="@drawable/edt"
+                        android:fontFamily="serif"
+                        android:hint="Password"
+                        android:padding="8dp" />
+
+                    <EditText
+                        android:id="@+id/userConfirmPasswordEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7hsdp"
+                        android:layout_marginTop="@dimen/_7hsdp"
+                        android:layout_marginRight="@dimen/_7hsdp"
+                        android:layout_marginBottom="@dimen/_7hsdp"
+                        android:background="@drawable/edt"
+                        android:fontFamily="serif"
+                        android:hint="Confirm Password"
+                        android:padding="8dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/registersumbitButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_31hsdp"
+                        android:layout_margin="@dimen/_8hsdp"
+                        android:background="@drawable/btn_like"
+                        android:fontFamily="serif"
+                        android:text="Register"
+                        android:textColor="#FBFBFB"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Already account? Login Here"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:id="@+id/loginAccount"
+                        android:layout_margin="5dp"/>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

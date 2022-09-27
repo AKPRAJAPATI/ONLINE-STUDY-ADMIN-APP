@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/TrackSelectionDialogThemeOverlay"
+    android:layout_width="@dimen/_200hsdp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10hsdp"
+    app:cardElevation="@dimen/_5hsdp">
+
+    <LinearLayout
+        android:padding="@dimen/_10hsdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageAk"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_190hsdp"
+            android:src="@drawable/image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30hsdp"
+                android:layout_margin="@dimen/_5hsdp"
+                android:layout_weight="1"
+                android:elevation="@dimen/_5hsdp"
+                app:cardCornerRadius="@dimen/_5hsdp"
+                app:cardElevation="@dimen/_5hsdp">
+
+                <TextView
+android:id="@+id/chooseImageBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Choose Image"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30hsdp"
+                android:layout_margin="@dimen/_5hsdp"
+                android:layout_weight="1"
+                android:elevation="@dimen/_5hsdp"
+                app:cardCornerRadius="@dimen/_5hsdp"
+                app:cardElevation="@dimen/_5hsdp">
+
+                <TextView
+                    android:id="@+id/updateBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="update"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

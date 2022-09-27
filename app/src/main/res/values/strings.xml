@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mr Minded Admin App</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="track_selection_title">Video Quality</string>
+    <string name="my_app_name">Mr Minded</string>
+    <string name="app_name_admin">Mr Minded University Admin</string>
+</resources>
